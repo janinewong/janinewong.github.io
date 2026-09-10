@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CaseImage } from "@/components/CaseImage";
@@ -18,10 +19,12 @@ export function PremierBaysCaseStudy() {
     <section className="pbSection pbExperience"><div className="pbWideCopy"><h2>One experience to purchase and manage annual parking.</h2><p>I designed the core Premier Bays experience around four key tasks:</p><ul><li>Purchase an annual ticket</li><li>View an active ticket</li><li>Manage assigned vehicles</li><li>Renew an annual ticket</li></ul><p>The purchase flow brought location search, bay selection, vehicle selection, payment, and ticket details into the existing PayByPhone experience.</p></div><Visual src="experience-flow.png" alt="Premier Bays purchase and ticket-management screens" className="pbExperienceVisual" /></section>
     <section className="pbSection pbTesting"><div className="pbWideCopy"><h2>Testing surfaced an expectation to manage vehicles.</h2><p>During usability testing, participants initially struggled to find where they could edit vehicles, and most expected to add or remove vehicles directly from their annual ticket.</p><div className="pbTestingGrid"><div><strong>FINDING</strong><em>“Where do I edit my vehicles?”</em></div><div><strong>EXPLORATION</strong><em>Manage vehicles directly from the annual ticket</em></div><div><strong>DECISION</strong><em>Deprioritize for launch based on effort vs. value</em></div></div></div><div className="pbTestingPhones"><CaseImage src="/images/premier-bays/testing-finding.png" alt="Testing finding: vehicle management discoverability" /><CaseImage src="/images/premier-bays/testing-exploration.png" alt="Testing exploration: manage vehicles from annual ticket" /><CaseImage src="/images/premier-bays/testing-decision.png" alt="Testing decision: vehicle editing flow" /></div></section>
     <section className="pbSection pbImpact"><div className="pbWideCopy"><h2>Annual parking, now inside PayByPhone.</h2><p>Motorists could purchase and manage an annual ticket for a specific parking space directly in the app, bringing Premier Bays into the core PayByPhone experience.</p><div className="pbMetrics pbImpactMetrics"><div><span>BUSINESS</span><strong>212</strong><em>Premier Bay transactions<br />Target: 200+</em></div><div><span>&nbsp;</span><strong>+12%</strong><em>YoY transactions</em></div><div><span>USER</span><strong>91</strong><em>SUS score<br />Target: 68+</em></div><div><span>&nbsp;</span><strong>94%</strong><em>task success<br />Target: 78+</em></div></div><small>Data from Nov 2020 - Nov 2021</small></div><Visual src="hero-ui-1.png" alt="Premier Bays results and operations experience" className="pbImpactVisual" /></section>
-    <section className="premierBaysNext">
-      <a href="/work/developer-center" aria-label="View the Developer Center case study">
-        <img src={asset("next-project.png")} alt="Next project: Developer Center" />
-      </a>
+    <section className="premierBaysNext pbNext">
+      <div className="pbNextHeading"><span>NEXT PROJECT</span><h2>Developer Center</h2></div>
+      <Link className="pbNextBanner" href="/work/developer-center">
+        <div><h3>Making Mobify&apos;s developer documentation easier to find and use.</h3><span>VIEW CASE STUDY →</span></div>
+        <img src="/images/developer-center/hero.png" alt="Developer Center preview" />
+      </Link>
     </section>
     <Footer />
   </main>;

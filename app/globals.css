@@ -615,8 +615,7 @@ a.nextProjectBanner { display: grid; margin-top: 0; }
 .premierBaysCaseStudy .siteHeader { border-bottom: 0; }
 .premierBaysHero, .premierBaysSection, .premierBaysNext { width: 100%; margin: 0; }
 .premierBaysHero .caseImageTrigger, .premierBaysSection .caseImageTrigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
-.premierBaysHero img, .premierBaysSection img, .premierBaysNext img { width: 100%; height: auto; }
-.premierBaysNext a { display: block; }
+.premierBaysHero img, .premierBaysSection img { width: 100%; height: auto; }
 .premierBaysNext a:focus-visible { outline: 3px solid #0f172a; outline-offset: -3px; }
 
 .premierBaysCaseStudy { --pb-green: #087618; --pb-pale: #f6fcf7; color: #111a32; }
@@ -645,10 +644,12 @@ a.nextProjectBanner { display: grid; margin-top: 0; }
 .pbTesting .pbWideCopy { max-width: none; }.pbTestingGrid { max-width: none; }
 .pbTestingPhones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 48px; align-items: start; }.pbTestingPhones .caseImageTrigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }.pbTestingPhones img { width: 100%; height: auto; }
 .pbImpactMetrics > div { grid-template-rows: 27px 44px auto; align-content: start; }.pbImpactMetrics > div > span { min-height: 27px; }.pbImpactMetrics > div > strong { min-height: 44px; }
+.pbNext { padding: 120px 80px 0; background: #fff; }.pbNextHeading > span { color: #64748b; font-size: 20px; font-weight: 600; }.pbNext h2 { margin: 24px 0; font-size: clamp(48px, 5.56vw, 80px); line-height: .9; letter-spacing: -.03em; }.pbNextBanner { display: grid; grid-template-columns: minmax(0, 500px) minmax(0, 515px); justify-content: space-between; gap: 64px; min-height: 380px; padding: 64px 84px 0; overflow: hidden; border-radius: 12px 12px 0 0; background: #e1e7f3; color: #111a32; text-decoration: none; }.pbNextBanner > div { align-self: center; padding-bottom: 64px; }.pbNextBanner h3 { margin: 0; font-size: 40px; line-height: 1.28; }.pbNextBanner span { display: block; margin-top: 24px; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 600; }.pbNextBanner img { align-self: end; width: 100%; height: 316px; object-fit: cover; object-position: left top; border-radius: 10px 10px 0 0; }
 @media (max-width: 900px) { .pbHero, .pbChallenge, .pbResearch { grid-template-columns: 1fr; }.pbHero, .pbSection { padding: 72px var(--page-gutter); }.pbMeta { margin-top: 40px; }.pbTestingGrid, .pbImpactMetrics { grid-template-columns: 1fr; }.pbMetrics { grid-template-columns: repeat(2, 1fr); }.pbSection h2 { font-size: 40px; } }
 @media (max-width: 900px) { .pbHero { height: auto; }.pbHeroVisual, .pbChallengeVisual, .pbResearchVisuals { width: 100%; max-width: 100%; margin-right: 0; }.pbHeroVisual { height: auto; }.pbHeroVisual .caseImageTrigger { height: auto; }.pbHeroVisual img { height: auto; }.pbExperienceVisual { height: auto; }.pbExperienceVisual img, .pbTestingImage img { transform: none; }.pbTestingImage { height: auto; }.pbImpact .pbMetrics { grid-template-columns: 1fr; } }
 @media (max-width: 900px) { .pbHeroVisual .caseImageTrigger, .pbHeroVisual img { width: 100% !important; height: auto !important; } }
 @media (max-width: 900px) { .pbTestingPhones { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .pbNext { padding: 80px var(--page-gutter) 0; }.pbNextBanner { grid-template-columns: 1fr; min-height: 0; padding: 36px 28px 0; gap: 28px; }.pbNextBanner > div { padding-bottom: 0; }.pbNextBanner h3 { font-size: 28px; }.pbNextBanner img { height: auto; aspect-ratio: 515 / 316; } }
 .promotionsFigmaCaseStudy h1, .promotionsFigmaCaseStudy h2, .promotionsFigmaCaseStudy h3, .promotionsFigmaCaseStudy strong { font-family: "Lora", Georgia, serif; }
 .promotionsHero { display: grid; grid-template-columns: minmax(0, 640fr) minmax(0, 800fr); gap: 64px; align-items: center; padding: 80px; background: var(--promo-green); color: #fff; }
 .promotionsHeroCopy { display: flex; flex-direction: column; gap: 64px; min-width: 0; }

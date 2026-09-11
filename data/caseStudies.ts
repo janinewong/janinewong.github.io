@@ -9,7 +9,8 @@ type ApplicationsSection = { kind: "applications"; items: { title?: string; titl
 type ListSection = { kind: "list"; title: string; body: string; items: { title: string; body: string }[]; image: CaseStudyImage };
 type ImpactSection = { kind: "impact"; eyebrow: string; metrics: CaseStudyMetric[] };
 type NextSection = { kind: "next"; title: string; body: string; href: string; image: CaseStudyImage };
-type ManageProblemGoalSection = { kind: "manage-problem-goal" }; type MultichannelConnectingSection = { kind: "multichannel-connecting" };
+type ManageProblemGoalSection = { kind: "manage-problem-goal" };
+type MultichannelConnectingSection = { kind: "multichannel-connecting" };
 type Section = HeroSection | IntroSection | SplitSection | WideSection | ApplicationsSection | ListSection | ImpactSection | NextSection | ManageProblemGoalSection | MultichannelConnectingSection;
 
 export type CaseStudy = {

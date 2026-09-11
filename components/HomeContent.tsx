@@ -11,8 +11,7 @@ export function HomeContent() {
       <section className="heroIntro">
         <h1>Hola! I’m Janine 👋</h1>
         <p>
-          Senior UX Designer on the Selling Partner UX Design Systems team at Amazon.
-          Currently, making selling less stressful for sellers.
+          Senior UX Designer at Amazon, designing systems and tools that make selling a little less stressful.
         </p>
       </section>
 
